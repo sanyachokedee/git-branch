@@ -1,5 +1,8 @@
-<html lang="en"></html>
 <html lang="en">
+
+</html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +10,13 @@
     <title>Product</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="scr/font_awesome/css/fontawesome.min.css"> -->
 </head>
+
 <body>
     <div class="container">
         <h1 class="brand">MR.</h1>
@@ -56,12 +64,101 @@
             </div>
             <div class="col-lp-1 col-md-2">
                 <div class="text-center">
-                <button class="form-control">บันทึก</button>
+                    <button class="btn btn-primary btn-lg">บันทึก..</button>
                 </div>
             </div>
-            
         </div>
     </div>
+    <hr>
+    <div class="container">
+        <div class="box box-success">
+            <div class="box-header">
+                <i class="fa-user"></i>ทะเบียนลูกค้า
+            </div>
+            <div class="box-body">
+                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalCustomer">
+                    <i class="fa fa-bank"></i>เพิ่มรายการ
+                </a>
+                <table class="table">
+                    <thead>
+                        <th></th>
+                        <th>รหัสลูกค้า</th>
+                        <th>ชื่อ</th>
+                        <th>อีเมล์</th>
+                        <th>เบอร์โทร</th>
+                        <th>ที่อยู่</th>
+                        <th>line id</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="" class="btn btn-danger">
+                                    <i class="fa fa-times"></i>
+                                </a>&nbsp;
+                                <a href="" class="btn btn-danger">
+                                    <i class="fa fa-pencil"></i>
+                                </a>&nbsp;
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+<!-- modal -->
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modalCustomer">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary">
+          <h5 class="modal-title">
+              <i class="fa fa-pencil"></i>ข้อมูลลูกค้า
+            </h5>
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           <div class="row">
+               <div class="col-lg-3 col-md-3 col-sm-4">
+                   <label for="">รหัสลูกค้า</label>
+                   <input type="text" class="form-control">
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="">ชื่อ</label>
+                    <input type="text" class="form-control">
+               </div>              
+               <div class="col-lg-3 col-md-3 col-sm-4">
+                    <label for="">อีเมล์</label>
+                    <input type="text" class="form-control">
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-4">
+                    <label for="">เบอร์โทร</label>
+                    <input type="text" class="form-control">
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-4">
+                    <label for="">Line ID</label>
+                    <input type="text" class="form-control">
+               </div>
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                    <label for="">ทีอยู่</label>
+                    <input type="text" class="form-control">
+               </div>
+           </div>
+        </div>
+        <div class="text-center">
+            <a href="" class="btn btn-primary">
+                <i class="fa fa-check"></i>บันทึก
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -75,4 +172,5 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </body>
+
 </html>
